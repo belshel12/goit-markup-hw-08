@@ -1,0 +1,49 @@
+.page-logo {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+
+  &_theme_light {
+    span {
+      color: black;
+    }
+  }
+
+  &_theme_dark {
+    margin-bottom: 20px;
+
+    span {
+      color: var(--primary-text-color-theme-dark);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-logo {
+    &_theme_light {
+      margin-right: 87px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    &_theme_dark {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-logo {
+    font-size: 26px;
+    line-height: 1.19;
+
+    &_theme_light {
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+  }
+}

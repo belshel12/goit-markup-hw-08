@@ -1,0 +1,26 @@
+:root {
+	--primary-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway", sans-serif;
+	--primary-text-color-theme-light: #212121;
+	--secondary-text-color-theme-light: #757575;
+	--primary-text-color-theme-dark: #ffffff;
+	--secondary-text-color-theme-dark: #ffffff99;
+	--primary-background-color: #ffffff;
+	--secondary-background-color: #f5f4fa;
+	--primary-dark-bg-color: #2f303a;
+	--secondary-dark-bg-color: rgba(255, 255, 255, 0.1);
+	--hero-bg-color: #c4c4c4;
+	--accent-color: #2196f3;
+	--button-hover-accent-color: #188ce8;
+	--primary-icon-fill: #afb1b8;
+	--secondary-icon-fill: #ffffff;
+	--overlay-bg-blue-color: rgba(33, 150, 243, 0.9);
+	--overlay-bg-dark-color: rgba(47, 48, 58, 0.8);
+	--backdrop-color: rgba(0, 0, 0, 0.2);
+	--transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	--placeholder-color-theme-light: rgba(117, 117, 117, 0.5);
+	--placeholder-color-theme-dark: rgba(255, 255, 255, 0.6);
+ }
+
+ $primary-font: "Roboto", sans-serif;
+ $secondary-font: "Raleway", sans-serif;

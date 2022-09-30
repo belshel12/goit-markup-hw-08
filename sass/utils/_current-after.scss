@@ -1,0 +1,23 @@
+.menu__link--current::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--accent-color);
+ }
+
+.mobile-menu__social-link--current::after {
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+
+	content: "";
+	width: 1px;
+	height: 100%;
+	background-color: rgba(33, 33, 33, 0.2);
+}

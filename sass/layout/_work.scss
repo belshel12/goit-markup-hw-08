@@ -1,0 +1,41 @@
+@media screen and (max-width: 1199px) {
+	.work-section{
+		position: absolute;
+		display: none;
+	}
+}
+
+.work-section {
+  padding-top: 0;
+}
+
+.work-section__list {
+  display: flex;
+  gap: 30px;
+}
+
+.work-section__card {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.work-section__card__container {
+  position: relative;
+}
+
+.work-section__img {
+	width: 370px;
+}
+
+.work-section__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  @include fonts();
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--overlay-bg-dark-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

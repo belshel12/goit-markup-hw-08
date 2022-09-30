@@ -1,0 +1,127 @@
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
+  .contact-list {
+    display: none;
+  }
+
+  .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .open-mobile-menu-btn {
+    line-height: 0;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .open-mobile-menu-btn {
+    display: none;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+    .menu__link {
+      position: relative;
+      @include fonts(14px, 1.14, 500, 0.02em);
+      color: var(--primary-text-color-theme-light);
+      transition: color var(--transition-dur-and-func);
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      &--current {
+        color: var(--accent-color);
+      }
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
+    }  
+    }
+
+	 .contact-list {
+      display: flex;
+      flex-direction: column;
+		gap: 10px;	
+      }
+
+		.contact__link {
+			display: flex;
+			align-items: center;
+			@include fonts(12px, 1.17, 500, 0.02em);
+			color: var(--secondary-text-color-theme-light);
+			transition: color var(--transition-dur-and-func);
+		 
+			.contact__item:hover &,
+			.contact__item:focus & {
+			  color: var(--accent-color);
+			}
+		 
+			.contact__icon {
+			  margin-right: 8px;
+			  fill: currentColor;
+			}
+
+			.contact__icon-mail {
+				width: 14px;
+				height: 10px;
+			}
+
+			.contact__icon-tel {
+				width: 10px;
+				height: 14px;
+			}
+		 }
+  }
+
+  @media screen and (min-width: 1200px) {
+
+	.contact-list {
+		flex-direction: row;
+		align-items: center;
+		column-gap: 50px;
+	 }
+	 
+	 .contact__link {
+
+		@include fonts(14px, 1.14, 500, 0.02em);
+			 
+		.contact__icon {
+		  margin-right: 10px;
+		}
+
+		.contact__icon-mail {
+			width: 16px;
+			height: 12px;
+		}
+
+		.contact__icon-tel {
+			width: 10px;
+			height: 16px;
+		}
+	  }
+	}
