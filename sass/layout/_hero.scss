@@ -46,7 +46,7 @@
 max 767px */
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url(../../images/mobile/header.jpg);
+    background-image: url(../images/mobile/herobg.jpg)
   }
 }
 
@@ -54,7 +54,7 @@ max 767px */
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url(../../images/mobile/header@2x.jpg);
+    background-image: url(../images/mobile/herobg@2x.jpg);
   }
 }
 
@@ -67,7 +67,7 @@ max 767px */
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/header.jpg);
+      url(../images/tablet/herobg.jpg);
   }
 }
 
@@ -79,7 +79,7 @@ max 767px */
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/header@2x.jpg);
+      url(../images/tablet/herobg@2x.jpg);
   }
 }
 
@@ -95,7 +95,7 @@ max 767px */
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/desktop/herobg.jpg);
+      url(../images/desktop/herobg.jpg)
   }
 
   .hero__title {
