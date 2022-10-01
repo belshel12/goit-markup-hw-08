@@ -2,9 +2,9 @@
 	const refs = {
 	  openMenuBtn: document.querySelector('[data-menu-open]'),
 	  closeMenuBtn: document.querySelector('[data-menu-close]'),
-	  menu: document.querySelector('[data-menu]'), 
+	  menu: document.querySelector('[data-menu]'),
+	  bodyNoScroll: document.querySelector("[data-no-scroll]")
 	};
-	bodyNoScroll = document.querySelector("[data-no-scroll]");
 	
 	refs.openMenuBtn.addEventListener('click', toggleModal);
 	refs.closeMenuBtn.addEventListener('click', toggleModal);
