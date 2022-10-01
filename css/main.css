@@ -64,6 +64,10 @@ body {
   color: var(--primary-text-color-theme-light);
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
