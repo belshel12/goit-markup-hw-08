@@ -26,9 +26,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+	 height: 100%;
+    padding: 48px 40px;
   }
 
   .mobile-menu__close-btn {
@@ -64,11 +63,12 @@
 
   .mobile-menu__social-list {
     display: flex;
+	 flex-wrap: wrap;
   }
 
   .mobile-menu__social-item {
     position: relative;
-    margin-right: 20px;
+    margin-right: 10px;
     padding-right: 10px;
   }
 

@@ -34,9 +34,15 @@
   }
 }
 
-/*screen
-2x +
-1200px */
+
+@media screen and (max-width: 767px) {
+	.hero-modal {
+	  width: calc(100% - 30px);
+	  max-width: 450px;
+	}
+ }
+ 
+
 @media screen and (min-width: 1200px) {
   .hero-modal {
     width: 528px;

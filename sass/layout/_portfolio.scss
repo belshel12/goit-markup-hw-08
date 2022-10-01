@@ -53,6 +53,10 @@
   padding: 20px 24px;
 }
 
+.portfolio-card-container-first {
+	padding-bottom: 56px;
+}
+
 .portfolio-title {
   @include fonts(18px, 2, 700, 0.06em);
   color: var(--primary-text-color-theme-light);
@@ -103,7 +107,7 @@
   }
 
   .portfolio-img {
-    width: 450px;
+    width: 100%;
   }
 }
 

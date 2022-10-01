@@ -147,6 +147,14 @@
   }
 }
 
+/*screen
+max-width 767px */
+@media screen and (max-width: 767px) {
+	.modal-policy__label {
+		align-items: flex-start;
+	}
+}
+
 
 /*screen
 1200px */

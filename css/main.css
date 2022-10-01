@@ -284,9 +284,12 @@ button {
   border-color: var(--accent-color);
 }
 
-/*screen
-2x +
-1200px */
+@media screen and (max-width: 767px) {
+  .hero-modal {
+    width: calc(100% - 30px);
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-modal {
     width: 528px;
@@ -442,6 +445,13 @@ button {
 }
 
 /*screen
+max-width 767px */
+@media screen and (max-width: 767px) {
+  .modal-policy__label {
+    align-items: flex-start;
+  }
+}
+/*screen
 1200px */
 @media screen and (min-width: 1200px) {
   .modal-form__title {
@@ -487,9 +497,8 @@ button {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    height: 100%;
+    padding: 48px 40px;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -519,10 +528,11 @@ button {
   }
   .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-menu__social-item {
     position: relative;
-    margin-right: 20px;
+    margin-right: 10px;
     padding-right: 10px;
   }
   .mobile-menu__menu-link {
@@ -902,6 +912,10 @@ max 767px */
   margin-bottom: 16px;
 }
 
+.team-section__item {
+  background-color: var(--primary-background-color);
+}
+
 .team-section__card-container {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -917,7 +931,6 @@ max 767px */
 @media screen and (min-width: 768px) {
   .team-section__item {
     flex-basis: calc((100% - 30px) / 2);
-    background-color: var(--primary-background-color);
   }
   .team-section__img {
     width: 354px;
@@ -926,7 +939,6 @@ max 767px */
 @media screen and (min-width: 1200px) {
   .team-section__item {
     flex-basis: calc((100% - 90px) / 4);
-    background-color: var(--primary-background-color);
   }
   .team-section__img {
     width: 270px;
@@ -1034,6 +1046,10 @@ max 767px */
   padding: 20px 24px;
 }
 
+.portfolio-card-container-first {
+  padding-bottom: 56px;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -1088,7 +1104,7 @@ max 767px */
     margin-bottom: 40px;
   }
   .portfolio-img {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
